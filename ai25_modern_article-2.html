@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="معرفی 25 ابزار هوش مصنوعی برتر برای یادگیری، جستجو، تولید محتوا، برنامه‌نویسی، تصویر، ویدئو و موسیقی.">
+<title>۱۰ هوش مصنوعی که حتماً باید بشناسید</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#f5f8fc;color:#20252d;font-family:Tahoma,"Vazirmatn",Arial,sans-serif;line-height:2}
+:root{--blue:#1769e0;--blue2:#eaf2ff;--line:#dbe6f4}
+a{color:inherit}
+.container{width:min(1050px,92%);margin:auto}
+.topbar{border-bottom:2px solid var(--blue);background:#fff;position:sticky;top:0;z-index:20;box-shadow:0 2px 12px #1769e00d}
+.topbar .inner{height:64px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-size:20px;font-weight:800;color:#111;text-decoration:none}
+.brand span{color:var(--blue)}
+.hero{padding:55px 0 35px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#fff 0%,#f5f8fc 100%)}
+.breadcrumb{font-size:13px;color:#777;margin-bottom:18px}
+h1{font-size:clamp(28px,5vw,44px);line-height:1.5;margin:0 0 12px;color:#151515}
+.lead{font-size:17px;color:#555;max-width:850px;margin:0}
+.meta{margin-top:20px;color:#888;font-size:13px}
+.toc{background:#edf5ff;border:1px solid #cfe0f8;border-right:4px solid var(--blue);border-radius:12px;padding:22px 25px;margin:30px 0}
+.toc h2{font-size:19px;margin:0 0 12px}
+.toc ol{margin:0;padding-right:25px;columns:2}
+.toc li{margin:4px 0;color:#333}
+.toc a{text-decoration:none}
+.toc a:hover{color:#2878ff}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 245px;gap:38px;align-items:start}
+.article{min-width:0}
+.ai-item{padding:35px 0;border-bottom:1px solid var(--line);scroll-margin-top:85px;background:#fff;margin:0 0 16px;padding:28px;border-radius:12px;border-right:3px solid #d7e6fb}
+.ai-head{display:flex;align-items:center;gap:16px;margin-bottom:16px}
+.rank{width:48px;height:48px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font-weight:800;flex:none;box-shadow:0 4px 12px #1769e02b}
+.logo{width:58px;height:58px;border:1px solid #d8e3f1;border-radius:12px;padding:9px;object-fit:contain;background:#fff;flex:none}
+.ai-title{margin:0;font-size:25px;line-height:1.4}
+.category{font-size:12px;color:#777;margin-top:3px}
+.ai-item p{margin:10px 0;color:#444;font-size:15px}
+.actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}
+.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border-radius:7px;padding:7px 14px;font-size:13px;border:1px solid #ddd;background:#fff}
+.btn.primary{background:var(--blue);color:white;border-color:var(--blue)}
+.btn:hover{opacity:.88}
+.side{position:sticky;top:85px;border:1px solid #cfe0f8;border-top:3px solid var(--blue);border-radius:10px;padding:18px;background:#fff}
+.side h3{margin:0 0 10px;font-size:16px}
+.side a{display:block;text-decoration:none;color:#555;font-size:13px;padding:6px 0;border-bottom:1px dashed #eee}
+.side a:hover{color:#2878ff}
+.noresult{display:none;text-align:center;padding:45px;color:#777;border:1px dashed #ddd;border-radius:10px;margin:30px 0}
+footer{margin-top:50px;background:#f7f7f7;border-top:1px solid #eee;padding:28px 0;color:#777;font-size:13px}
+@media(max-width:800px){
+ .layout{grid-template-columns:1fr}
+ .side{display:none}
+ .toc ol{columns:1}
+
+ .topbar .inner{height:58px}
+}
+@media(max-width:520px){
+ .brand{font-size:16px}
+
+ .search input{height:38px;font-size:12px}
+ .hero{padding-top:35px}
+ .ai-head{align-items:flex-start}
+ .rank{width:40px;height:40px}
+ .logo{width:50px;height:50px}
+ .ai-title{font-size:21px}
+}
+
+.top10{background:#fff;border:1px solid #cfe0f8;border-top:4px solid var(--blue);border-radius:12px;padding:20px;margin:0 0 26px;box-shadow:0 5px 18px #1769e00b}
+.top10-title{display:flex;gap:13px;align-items:center;margin-bottom:14px}
+.top10-title>span{width:44px;height:44px;border-radius:10px;background:var(--blue);color:#fff;display:grid;place-items:center;font-size:21px;font-weight:800}
+.top10-title strong{display:block;font-size:19px}
+.top10-title small{display:block;color:#777;font-size:12px}
+.top10-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.top10-grid a{background:#f3f7fd;border:1px solid #dce8f6;border-radius:8px;padding:7px 11px;text-decoration:none;color:#26384e;font-size:14px}
+.top10-grid a:hover{border-color:var(--blue);color:var(--blue);background:#edf5ff}
+@media(max-width:520px){.top10-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+ <div class="container inner">
+  <a class="brand" href="#">AI<span>25</span></a>
+ </div>
+</header>
+
+<main>
+<section class="hero">
+ <div class="container">
+  <div class="breadcrumb">خانه ← فناوری ← هوش مصنوعی</div>
+  <h1>۱۰ هوش مصنوعی که حتماً باید بشناسید</h1>
+  <p class="lead">هوش مصنوعی دیگر فقط یک ابزار برای متخصصان نیست. در این فهرست، ۲۵ ابزار کاربردی را برای جست‌وجو، یادگیری، تولید متن، برنامه‌نویسی، تصویر، ویدئو، صدا و موسیقی معرفی کرده‌ایم.</p>
+  <div class="meta">راهنمای جامع ابزارهای هوش مصنوعی • به‌روزرسانی ۲۰۲۶</div>
+ </div>
+</section>
+
+<section class="container">
+ <div class="toc">
+  <h2>فهرست مطالب</h2>
+  <ol id="toc"></ol>
+ </div>
+
+ 
+<div class="top10">
+  <div class="top10-title"><span>۱۰</span><div><strong>هوش مصنوعی که حتماً باید بشناسی</strong><small>۱۰ ابزار منتخب از فهرست ۲۵تایی</small></div></div>
+  <div class="top10-grid">
+    <a href="#ai-1"><b>1.</b> ChatGPT</a>
+    <a href="#ai-2"><b>2.</b> Gemini</a>
+    <a href="#ai-3"><b>3.</b> Grok</a>
+    <a href="#ai-4"><b>4.</b> Claude</a>
+    <a href="#ai-5"><b>5.</b> Microsoft Copilot</a>
+    <a href="#ai-6"><b>6.</b> DeepSeek</a>
+    <a href="#ai-7"><b>7.</b> Perplexity</a>
+    <a href="#ai-8"><b>8.</b> NotebookLM</a>
+    <a href="#ai-11"><b>9.</b> Suno</a>
+    <a href="#ai-19"><b>10.</b> Cursor</a>
+  </div>
+</div>
+<div class="layout">
+  <article class="article" id="article"></article>
+  <aside class="side">
+   <h3>دسترسی سریع</h3>
+   <div id="sideList"></div>
+  </aside>
+ </div>
+ <div class="noresult" id="noresult">موردی با این عبارت پیدا نشد.</div>
+</section>
+</main>
+
+<footer><div class="container">این صفحه یک پروژهٔ معرفی و آموزشی است. برای استفاده از هر ابزار، شرایط و محدودیت‌های خود سرویس را بررسی کنید.</div></footer>
+
+<script>
+const items = [
+{n:25,name:"Grammarly",fa:"Grammarly",cat:"نوشتن و ویرایش",logo:"https://www.google.com/s2/favicons?domain=grammarly.com&sz=128",url:"https://www.grammarly.com/",p1:"Grammarly یک دستیار نوشتاری مبتنی بر هوش مصنوعی است که هنگام نوشتن، متن را از نظر دستور زبان، نگارش، وضوح و لحن بررسی می‌کند. این ابزار برای ایمیل، مقاله، تکلیف و متن‌های انگلیسی کاربرد زیادی دارد.",p2:"ویژگی مهم آن این است که فقط به پیدا کردن غلط‌ها محدود نمی‌شود و می‌تواند پیشنهادهایی برای بازنویسی و تغییر لحن ارائه کند. اگر زیاد به زبان انگلیسی می‌نویسید، Grammarly می‌تواند نقش یک ویراستار اولیه را داشته باشد."},
+{n:24,name:"Canva AI",fa:"Canva AI",cat:"طراحی و تولید محتوا",logo:"https://www.google.com/s2/favicons?domain=canva.com&sz=128",url:"https://www.canva.com/ai/",p1:"Canva AI قابلیت‌های هوش مصنوعی را به یک محیط طراحی ساده اضافه می‌کند. با کمک آن می‌توان برای ارائه، پوستر، پست شبکه‌های اجتماعی و انواع محتوای بصری ایده گرفت یا بخشی از طراحی را سریع‌تر ساخت.",p2:"مزیت اصلی Canva ترکیب ابزارهای معمول طراحی با قابلیت‌های AI است؛ بنابراین لازم نیست برای هر کار از یک نرم‌افزار جداگانه استفاده کنید. برای دانش‌آموزان و تولیدکنندگان محتوا، این ترکیب می‌تواند روند ساخت پروژه را ساده‌تر کند."},
+{n:23,name:"ElevenLabs",fa:"ElevenLabs",cat:"صدا و گفتار",logo:"https://www.google.com/s2/favicons?domain=elevenlabs.io&sz=128",url:"https://elevenlabs.io/",p1:"ElevenLabs روی فناوری‌های صوتی و تبدیل متن به گفتار تمرکز دارد. این سرویس می‌تواند متن را به صدای مصنوعی تبدیل کند و برای تولید محتوای صوتی، روایت و پروژه‌های چندرسانه‌ای استفاده شود.",p2:"کیفیت طبیعی صدا و امکانات مرتبط با تولید صوت، بخش مهمی از کاربرد آن است. البته برای استفاده از صدای افراد واقعی یا محتوای دارای حق نشر باید مجوزها و قوانین مربوط به آن را رعایت کرد."},
+{n:22,name:"Midjourney",fa:"Midjourney",cat:"تولید تصویر",logo:"https://www.google.com/s2/favicons?domain=midjourney.com&sz=128",url:"https://www.midjourney.com/",p1:"Midjourney یکی از سرویس‌های شناخته‌شده در زمینه تولید تصویر با هوش مصنوعی است. کاربر با توصیف متنی می‌تواند ایده‌های تصویری مختلفی ایجاد کند و سبک، ترکیب‌بندی و فضای تصویر را تغییر دهد.",p2:"این ابزار بیشتر برای ایده‌پردازی و ساخت تصاویر خلاقانه شناخته می‌شود. برای استفاده حرفه‌ای باید به حقوق تصاویر، قوانین سرویس و شرایط استفاده تجاری توجه کرد."},
+{n:21,name:"Runway",fa:"Runway",cat:"تولید ویدئو",logo:"https://www.google.com/s2/favicons?domain=runwayml.com&sz=128",url:"https://runwayml.com/",p1:"Runway مجموعه‌ای از ابزارهای هوش مصنوعی برای تولید و ویرایش محتوای ویدئویی ارائه می‌کند. بخشی از فرایندهایی که قبلاً به تدوین و تولید دستی نیاز داشتند، با مدل‌های هوش مصنوعی سریع‌تر انجام می‌شوند.",p2:"این سرویس برای ساخت نمونه‌های اولیه، جلوه‌های تصویری و آزمایش ایده‌های ویدئویی کاربرد دارد. کیفیت خروجی به مدل، ورودی و دستور متنی وابسته است و برای نتیجه حرفه‌ای معمولاً ویرایش انسانی همچنان لازم است."},
+{n:20,name:"Pika",fa:"Pika",cat:"تولید ویدئو",logo:"https://www.google.com/s2/favicons?domain=pika.art&sz=128",url:"https://pika.art/",p1:"Pika ابزاری برای ساخت و تغییر محتوای ویدئویی با کمک هوش مصنوعی است. کاربر می‌تواند از متن یا تصویر برای شروع یک ایده ویدئویی استفاده کند و آن را به شکل‌های مختلف متحرک کند.",p2:"سادگی استفاده باعث شده برای آزمایش ایده‌های کوتاه و محتوای خلاقانه مناسب باشد. مانند دیگر مولدهای ویدئو، خروجی ممکن است همیشه دقیقاً مطابق تصور کاربر نباشد و نیاز به چند بار اصلاح داشته باشد."},
+{n:19,name:"Cursor",fa:"Cursor",cat:"برنامه‌نویسی",logo:"https://www.google.com/s2/favicons?domain=cursor.com&sz=128",url:"https://cursor.com/",p1:"Cursor یک محیط برنامه‌نویسی با قابلیت‌های هوش مصنوعی است که برای نوشتن، توضیح دادن، اصلاح و تغییر کد طراحی شده است. هدف آن این است که AI را مستقیماً در جریان کار برنامه‌نویس قرار دهد.",p2:"یکی از کاربردهای آن این است که بتواند با بخش‌های مختلف یک پروژه کار کند و در تغییرات چندفایلی کمک کند. با این حال، کد تولیدشده باید توسط برنامه‌نویس بررسی و آزمایش شود."},
+{n:18,name:"GitHub Copilot",fa:"GitHub Copilot",cat:"برنامه‌نویسی",logo:"https://www.google.com/s2/favicons?domain=github.com&sz=128",url:"https://github.com/features/copilot",p1:"GitHub Copilot دستیار هوش مصنوعی برای برنامه‌نویسی است که داخل محیط‌های توسعه و جریان کاری GitHub به کمک برنامه‌نویس می‌آید. می‌تواند برای تکمیل کد، توضیح و پیشنهاد راه‌حل استفاده شود.",p2:"Copilot جایگزین کامل یادگیری برنامه‌نویسی نیست؛ بیشتر شبیه یک دستیار است که سرعت کار را افزایش می‌دهد. بررسی صحت، امنیت و منطق کد همچنان بر عهده انسان است."},
+{n:17,name:"Adobe Firefly",fa:"Adobe Firefly",cat:"تصویر و طراحی",logo:"https://www.google.com/s2/favicons?domain=firefly.adobe.com&sz=128",url:"https://firefly.adobe.com/",p1:"Adobe Firefly مجموعه قابلیت‌های مولد هوش مصنوعی در اکوسیستم Adobe است. از آن می‌توان برای تولید و ویرایش عناصر تصویری، ایده‌پردازی و تغییر بخش‌هایی از تصاویر استفاده کرد.",p2:"نقطه قوت Firefly اتصال آن به ابزارهای حرفه‌ای Adobe است. این موضوع باعث می‌شود AI بخشی از یک جریان کاری بزرگ‌تر برای طراحی و تولید محتوای بصری باشد."},
+{n:16,name:"Google AI Studio",fa:"Google AI Studio",cat:"مدل و توسعه هوش مصنوعی",logo:"https://www.google.com/s2/favicons?domain=aistudio.google.com&sz=128",url:"https://aistudio.google.com/",p1:"Google AI Studio محیطی برای آزمایش و کار با مدل‌های هوش مصنوعی گوگل است. کاربران می‌توانند قابلیت‌های مدل‌ها را آزمایش کنند و برای ساخت برنامه‌های مبتنی بر AI از امکانات توسعه استفاده کنند.",p2:"این ابزار بیشتر برای کسانی مفید است که می‌خواهند فراتر از یک چت‌بات معمولی بروند و با مدل‌های مولد کار کنند. برای شروع، آشنایی با مفاهیم API و برنامه‌نویسی می‌تواند مفید باشد."},
+{n:15,name:"Hugging Face",fa:"Hugging Face",cat:"مدل‌ها و یادگیری ماشین",logo:"https://www.google.com/s2/favicons?domain=huggingface.co&sz=128",url:"https://huggingface.co/",p1:"Hugging Face یک پلتفرم بزرگ برای مدل‌ها، دیتاست‌ها و ابزارهای یادگیری ماشین است. پژوهشگران و توسعه‌دهندگان می‌توانند مدل‌های مختلف را پیدا کنند، آزمایش کنند و در پروژه‌های خود به کار ببرند.",p2:"اهمیت Hugging Face فقط به یک چت‌بات محدود نیست؛ اکوسیستم آن بخش‌های مختلف هوش مصنوعی از پردازش زبان تا بینایی ماشین را پوشش می‌دهد. برای یادگیری جدی‌تر AI، شناخت این پلتفرم بسیار مفید است."},
+{n:14,name:"Mistral Vibe",fa:"Mistral Vibe",cat:"برنامه‌نویسی و عامل هوش مصنوعی",logo:"https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",url:"https://mistral.ai/",p1:"Mistral Vibe نامی است که برای ابزار کدنویسی و تعامل عامل‌محور Mistral استفاده می‌شود. ایده اصلی آن کمک به انجام کارهای برنامه‌نویسی از طریق دستورات طبیعی و تعامل مستقیم با پروژه است.",p2:"این نوع ابزارها تلاش می‌کنند فاصله میان توضیح یک هدف و اجرای تغییرات در کد را کمتر کنند. با این حال، توسعه‌دهنده باید تغییرات پیشنهادی را بررسی و کنترل کند."},
+{n:13,name:"Meta AI",fa:"Meta AI",cat:"دستیار هوش مصنوعی",logo:"https://www.google.com/s2/favicons?domain=meta.ai&sz=128",url:"https://www.meta.ai/",p1:"Meta AI دستیار هوش مصنوعی شرکت Meta است که برای گفتگو، پاسخ‌گویی، ایده‌پردازی و برخی کارهای مولد طراحی شده است. این سرویس در اکوسیستم محصولات Meta نیز حضور دارد.",p2:"کاربرد آن برای کارهای روزمره شبیه دیگر دستیارهای مکالمه‌ای است، اما امکانات و دسترسی‌ها ممکن است بر اساس کشور و محصول متفاوت باشد. همیشه اطلاعات مهم را با منابع معتبر بررسی کنید."},
+{n:12,name:"Google Flow",fa:"Google Flow",cat:"تولید ویدئو و داستان‌پردازی",logo:"https://www.google.com/s2/favicons?domain=labs.google&sz=128",url:"https://labs.google/flow/",p1:"Google Flow یک محیط خلاقانه برای ساخت و پردازش محتوای ویدئویی با مدل‌های هوش مصنوعی گوگل است. هدف آن کمک به تبدیل ایده‌های داستانی و تصویری به صحنه‌های قابل تولید است.",p2:"این دسته از ابزارها نشان می‌دهند که AI در حال حرکت از تولید یک تصویر ساده به سمت ساخت سکانس و روایت ویدئویی است. دسترسی و امکانات سرویس ممکن است در طول زمان تغییر کند."},
+{n:11,name:"Suno",fa:"Suno",cat:"موسیقی",logo:"https://www.google.com/s2/favicons?domain=suno.com&sz=128",url:"https://suno.com/",p1:"Suno یک سرویس تولید موسیقی با هوش مصنوعی است که می‌تواند بر اساس توضیح کاربر، قطعه‌های موسیقی و آواز تولید کند. برای ایده‌پردازی موسیقایی و ساخت نمونه اولیه کاربرد دارد.",p2:"Suno فرایند تبدیل یک ایده متنی به قطعه موسیقی را بسیار ساده می‌کند. برای انتشار عمومی یا استفاده تجاری باید شرایط مجوز و حقوق مربوط به خروجی را بررسی کرد."},
+{n:10,name:"Perplexity Labs",fa:"Perplexity Labs",cat:"پژوهش و تولید خروجی",logo:"https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128",url:"https://www.perplexity.ai/",p1:"Perplexity Labs به قابلیت‌های پیشرفته‌تر Perplexity برای انجام کارهای چندمرحله‌ای و ساخت خروجی اشاره دارد. ایده اصلی، استفاده از AI برای پژوهش و تبدیل اطلاعات جمع‌آوری‌شده به یک نتیجه ساختاریافته است.",p2:"برای پروژه‌های پژوهشی، این نوع قابلیت می‌تواند زمان جستجو و سازمان‌دهی اطلاعات را کاهش دهد. با این حال، منابع اصلی باید بررسی شوند و نباید پاسخ AI را بدون راستی‌آزمایی منبع قطعی دانست."},
+{n:9,name:"Microsoft Designer",fa:"Microsoft Designer",cat:"طراحی",logo:"https://www.google.com/s2/favicons?domain=designer.microsoft.com&sz=128",url:"https://designer.microsoft.com/",p1:"Microsoft Designer ابزاری برای طراحی و تولید محتوای بصری با کمک هوش مصنوعی است. می‌توان از آن برای ساخت طرح‌های گرافیکی، تصویر و محتوای مناسب شبکه‌های اجتماعی استفاده کرد.",p2:"این ابزار برای کسانی مناسب است که می‌خواهند بدون تسلط کامل بر نرم‌افزارهای حرفه‌ای طراحی، سریع‌تر به یک طرح اولیه برسند. امکانات آن ممکن است با حساب و منطقه کاربر متفاوت باشد."},
+{n:8,name:"NotebookLM",fa:"NotebookLM",cat:"یادگیری و پژوهش",logo:"https://www.google.com/s2/favicons?domain=notebooklm.google&sz=128",url:"https://notebooklm.google/",p1:"NotebookLM یک ابزار پژوهشی و یادگیری است که می‌تواند بر اساس منابعی که کاربر در اختیارش قرار می‌دهد، به پرسش‌ها پاسخ دهد و اطلاعات را سازمان‌دهی کند. برای مطالعه اسناد و خلاصه‌سازی منابع کاربرد دارد.",p2:"ویژگی مهم آن تمرکز روی منابع انتخاب‌شده توسط کاربر است. به همین دلیل برای مطالعه یک جزوه، مقاله یا مجموعه سند می‌تواند از یک چت عمومی ساختاریافته‌تر باشد؛ البته باز هم باید پاسخ‌ها را با منبع تطبیق داد."},
+{n:7,name:"Perplexity",fa:"Perplexity",cat:"جستجو و پژوهش",logo:"https://www.google.com/s2/favicons?domain=perplexity.ai&sz=128",url:"https://www.perplexity.ai/",p1:"Perplexity یک موتور جست‌وجوی مبتنی بر هوش مصنوعی است که پاسخ‌ها را همراه با ارجاع به منابع ارائه می‌کند. برای پرسش‌های پژوهشی و پیدا کردن اطلاعات از وب طراحی شده است.",p2:"تفاوت مهم آن با یک چت‌بات ساده، تمرکز بیشتر بر جستجو و منبع‌دهی است. با این حال، وجود citation به‌تنهایی تضمین نمی‌کند که هر ادعا درست باشد؛ بررسی منبع اصلی همچنان مهم است."},
+{n:6,name:"DeepSeek",fa:"DeepSeek",cat:"گفتگو و برنامه‌نویسی",logo:"https://www.google.com/s2/favicons?domain=deepseek.com&sz=128",url:"https://www.deepseek.com/",p1:"DeepSeek خانواده‌ای از مدل‌های هوش مصنوعی برای کارهایی مانند گفتگو، استدلال و برنامه‌نویسی ارائه می‌کند. این مدل‌ها در سال‌های اخیر توجه زیادی در جامعه فناوری به خود جلب کرده‌اند.",p2:"یکی از کاربردهای مهم آن برای کاربران، حل مسئله و کمک به کدنویسی است. مثل هر مدل زبانی دیگر، پاسخ‌ها ممکن است خطا داشته باشند و برای مسائل مهم باید بررسی مستقل انجام شود."},
+{n:5,name:"Microsoft Copilot",fa:"Microsoft Copilot",cat:"دستیار هوش مصنوعی",logo:"https://www.google.com/s2/favicons?domain=copilot.microsoft.com&sz=128",url:"https://copilot.microsoft.com/",p1:"Microsoft Copilot دستیار هوش مصنوعی مایکروسافت است که برای گفتگو، تولید و بازنویسی متن، ایده‌پردازی و برخی کارهای مرتبط با اکوسیستم Microsoft استفاده می‌شود.",p2:"یکی از ویژگی‌های مهم Copilot اتصال آن به محصولات و خدمات Microsoft در سناریوهای مختلف است. امکانات دقیق آن بسته به نسخه، حساب و سرویس مورد استفاده متفاوت است."},
+{n:4,name:"Claude",fa:"Claude",cat:"دستیار هوش مصنوعی",logo:"https://www.google.com/s2/favicons?domain=claude.ai&sz=128",url:"https://claude.ai/",p1:"Claude دستیار هوش مصنوعی شرکت Anthropic است و برای گفتگو، تحلیل متن، خلاصه‌سازی، ایده‌پردازی و کمک به برنامه‌نویسی استفاده می‌شود. این سرویس روی تعامل متنی و کار با اطلاعات طولانی تمرکز دارد.",p2:"Claude می‌تواند برای کارهای تحلیلی و نوشتاری مفید باشد و در برخی محیط‌ها ابزارهای بیشتری برای کار با فایل و کد ارائه می‌کند. با این حال، مانند هر مدل زبانی ممکن است پاسخ نادرست تولید کند."},
+{n:3,name:"Grok",fa:"Grok",cat:"دستیار و اطلاعات زنده",logo:"https://www.google.com/s2/favicons?domain=grok.com&sz=128",url:"https://grok.com/",p1:"Grok دستیار هوش مصنوعی توسعه‌یافته توسط xAI است. این سرویس برای گفتگو، پاسخ به پرسش‌ها، تحلیل و در برخی سناریوها استفاده از اطلاعات به‌روز طراحی شده است.",p2:"ویژگی‌ها و سطح دسترسی Grok در طول زمان تغییر می‌کنند و ممکن است به حساب یا محصول مورد استفاده وابسته باشند. برای اطلاعات حساس یا مهم، اتکا به یک پاسخ AI کافی نیست."},
+{n:2,name:"Gemini",fa:"Gemini",cat:"دستیار هوش مصنوعی گوگل",logo:"https://www.google.com/s2/favicons?domain=gemini.google.com&sz=128",url:"https://gemini.google.com/",p1:"Gemini خانواده مدل‌ها و دستیار هوش مصنوعی Google است. می‌تواند در گفتگو، تحلیل، یادگیری، نوشتن، ایده‌پردازی و بعضی کارهای چندرسانه‌ای کمک کند و با اکوسیستم Google ارتباط نزدیکی دارد.",p2:"یکی از نقاط مهم Gemini تنوع کاربردها و اتصال آن به سرویس‌های Google در سناریوهای پشتیبانی‌شده است. امکانات دقیق بسته به نسخه، کشور و حساب کاربر فرق می‌کند."},
+{n:1,name:"ChatGPT",fa:"ChatGPT",cat:"دستیار همه‌کاره",logo:"https://www.google.com/s2/favicons?domain=chatgpt.com&sz=128",url:"https://chatgpt.com/",p1:"ChatGPT یک دستیار هوش مصنوعی از OpenAI است که برای گفتگو، یادگیری، توضیح مفاهیم، نوشتن، تحلیل، برنامه‌نویسی و بسیاری از کارهای دیگر استفاده می‌شود. می‌توان از آن برای پرسیدن سؤال یا انجام مرحله‌ای یک پروژه استفاده کرد.",p2:"قدرت اصلی ChatGPT در تنوع کاربردها و تعامل چندمرحله‌ای با کاربر است. با این حال، پاسخ AI همیشه تضمین‌شده و بدون خطا نیست؛ برای اطلاعات حساس، علمی یا به‌روز باید منبع و نتیجه را بررسی کرد."}
+];
+
+const article=document.getElementById('article');
+const toc=document.getElementById('toc');
+const sideList=document.getElementById('sideList');
+
+function render(list){
+ article.innerHTML='';
+ list.forEach(x=>{
+   const el=document.createElement('section');
+   el.className='ai-item';
+   el.id='ai-'+x.n;
+   el.innerHTML=`
+    <div class="ai-head">
+      <div class="rank">${x.n}</div>
+      <img class="logo" src="${x.logo}" alt="لوگوی ${x.fa}" onerror="this.style.display='none'">
+      <div><h2 class="ai-title">${x.name}</h2><div class="category">${x.cat}</div></div>
+    </div>
+    <p>${x.p1}</p><p>${x.p2}</p>
+    <div class="actions"><a class="btn primary" href="${x.url}" target="_blank" rel="noopener">ورود به سایت رسمی</a><a class="btn" href="#ai-${x.n}">لینک این بخش</a></div>`;
+   article.appendChild(el);
+ });
+ document.getElementById('noresult').style.display=list.length?'none':'block';
+}
+function makeNav(){
+ items.forEach(x=>{
+  const li=document.createElement('li');
+  li.innerHTML=`<a href="#ai-${x.n}">${x.n}. ${x.fa}</a>`;
+  toc.appendChild(li);
+  const a=document.createElement('a');
+  a.href='#ai-'+x.n;a.textContent=x.n+' — '+x.fa;
+  sideList.appendChild(a);
+ });
+}
+makeNav();render(items);
+
+document.getElementById('search').addEventListener('input',e=>{
+ const q=e.target.value.trim().toLowerCase();
+ if(!q){render(items);return}
+ render(items.filter(x=>(x.name+' '+x.fa+' '+x.cat+' '+x.p1+' '+x.p2).toLowerCase().includes(q)));
+});
+</script>
+</body>
+</html>
